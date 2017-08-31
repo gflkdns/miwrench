@@ -18,6 +18,10 @@ public class MTimeUtils {
         format.applyPattern("yyyy/MM/dd");
         return format.format(time);
     }
+    public static String getYearMonthDay_HHmmSS(long time) {
+        format.applyPattern("yyyy/MM/dd_HH:mm:ss:SSS");
+        return format.format(time);
+    }
 
     public static String getComTime(long time) {
         Calendar pre = Calendar.getInstance();
